@@ -13,3 +13,6 @@ Arrays:
 670 - me ***
 768 -
 769 - me ***
+
+Strings:
+5   - not me
