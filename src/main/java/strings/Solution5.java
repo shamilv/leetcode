@@ -12,7 +12,7 @@ public class Solution5 {
             if (Math.max(len1, len2) > len) {
                 len = Math.max(len1, len2);
                 left = len2 > len1 ? i - (len2 - 1) / 2 : i - len1 / 2;
-                right = len2 > len1 ? i + len2 / 2 : i + len1 / 2;
+                right = i + len / 2;
             }
         }
         return s.substring(left, right + 1);
