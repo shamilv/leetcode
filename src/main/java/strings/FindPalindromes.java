@@ -17,10 +17,10 @@ public class FindPalindromes {
         String reversePrefix = reverse(prefix);
         String reverseSuffix = reverse(suffix);
 
-        if (isPalindrome(prefix) && dict.containsKey(reverseSuffix))
+        if (isPalindrome(prefix) && dict.containsKey(reverseSuffix) && dict.get(reverseSuffix) != i)
           res.add(Arrays.asList(dict.get(reverseSuffix), i));
 
-        if (isPalindrome(suffix) && dict.containsKey(reversePrefix))
+        if (isPalindrome(suffix) && dict.containsKey(reversePrefix) && dict.get(reversePrefix) != i)
           res.add(Arrays.asList(dict.get(reversePrefix), i));
       }
     }

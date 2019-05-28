@@ -20,7 +20,7 @@ class FindPalindromesTest {
   public void test2() {
     FindPalindromes findPalindromes = new FindPalindromes();
     List<List<Integer>> res = findPalindromes.findPalindromes(Arrays.asList("aha", "ah"));
-    assertEquals(Arrays.asList(Arrays.asList(1, 0), Arrays.asList(0, 1)), res);
+    assertEquals(Arrays.asList(Arrays.asList(1, 0)), res);
   }
 
 }
