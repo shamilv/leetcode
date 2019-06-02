@@ -15,6 +15,14 @@ class Solution127Test {
         assertEquals(0, res);
     }
 
+
+    @Test
+    public void edgeCase2() {
+        Solution127 solution127 = new Solution127();
+        int res = solution127.ladderLength("hip", "hot", Arrays.asList("hop"));
+        assertEquals(0, res);
+    }
+
     @Test
     public void baseCase1() {
         Solution127 solution127 = new Solution127();

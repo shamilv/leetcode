@@ -1,11 +1,47 @@
 package strings;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Solution127 {
+
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        int len = beginWord.length();
+        Map<String, List<String>> dict = new HashMap<>();
+        wordList.forEach(word -> {
+            for (int i = 0; i < len; i++) {
+                String newWord = word.substring(0, i) + "*" + word.substring(i + 1, len);
+                dict.computeIfAbsent(newWord, k -> new ArrayList<>()).add(word);
+            }
+        });
+
+        LinkedList<Object[]> queue = new LinkedList<>();
+        queue.add(new Object[]{beginWord, 1});
+        Set<String> visited = new HashSet<>();
+        visited.add(beginWord);
+        while(!queue.isEmpty()) {
+            Object[] pair = queue.remove();
+            String word = (String) pair[0];
+            Integer level = (Integer) pair[1];
+            for (int i = 0; i < len; i++) {
+                String newWord = word.substring(0, i) + "*" + word.substring(i + 1, len);
+                for (String searchWord: dict.getOrDefault(newWord, new ArrayList<>())) {
+                    if (searchWord.equals(endWord))
+                        return level + 1;
+                    if (!visited.contains(searchWord)) {
+                        visited.add(searchWord);
+                        queue.offer(new Object[]{searchWord, level + 1});
+                    }
+                }
+            }
+        }
+
+        return 0;
+    }
+
+    /**
+     * It was slow solution
+     *
+      public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> dict = new HashSet<>(wordList);
         if (!dict.contains(endWord))
             return 0;
@@ -35,5 +71,5 @@ public class Solution127 {
             if (beginWord.charAt(i) != endWord.charAt(i))
                 cnt++;
         return cnt <= 1;
-    }
+    }*/
 }
