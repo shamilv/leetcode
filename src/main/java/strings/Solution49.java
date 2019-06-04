@@ -1,8 +1,24 @@
 package strings;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Solution49 {
+
+    public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> dict = new HashMap<>();
+        for (String word: strs) {
+            char[] chars = word.toCharArray();
+            Arrays.sort(chars);
+            String newWord = new String(chars);
+            dict.computeIfAbsent(newWord, k -> new ArrayList<>()).add(word);
+        }
+        return dict.values().stream().collect(Collectors.toList());
+    }
+
+    /**
+     *
+
     public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> res = new ArrayList<>();
         if (strs == null || strs.length == 0)
@@ -25,4 +41,5 @@ public class Solution49 {
 
         return res;
     }
+     */
 }

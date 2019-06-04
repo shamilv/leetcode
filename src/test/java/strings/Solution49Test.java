@@ -33,8 +33,8 @@ class Solution49Test {
         Solution49 solution49 = new Solution49();
         List<List<String>> res = solution49.groupAnagrams(new String[]{"aha", "haa", "gaa"});
         List<List<String>> exp = new ArrayList<>();
-        exp.add(Arrays.asList("aha", "haa"));
         exp.add(Arrays.asList("gaa"));
+        exp.add(Arrays.asList("aha", "haa"));
         assertEquals(exp, res);
     }
 
@@ -44,8 +44,8 @@ class Solution49Test {
         List<List<String>> res = solution49.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"});
         List<List<String>> exp = new ArrayList<>();
         exp.add(Arrays.asList("eat","tea","ate"));
-        exp.add(Arrays.asList("tan", "nat"));
         exp.add(Arrays.asList("bat"));
+        exp.add(Arrays.asList("tan", "nat"));
         assertEquals(exp, res);
     }
 
