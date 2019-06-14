@@ -15,11 +15,13 @@ public class Solution141 {
     public boolean hasCycle(ListNode head) {
         if (head == null)
             return false;
-        ListNode iter = head, fastIter = head.next;
-        while (fastIter != null && iter != fastIter) {
-            fastIter = fastIter.next == null ? null : fastIter.next.next;
+        ListNode iter = head, fastIter = head;
+        while (fastIter != null && fastIter.next != null) {
+            fastIter = fastIter.next.next;
             iter = iter.next;
+            if (iter == fastIter)
+                return true;
         }
-        return fastIter != null;
+        return false;
     }
 }
