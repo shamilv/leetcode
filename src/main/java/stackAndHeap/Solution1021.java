@@ -13,12 +13,13 @@ public class Solution1021 {
         if (S == null || S.isEmpty())
             return "";
         StringBuilder ans = new StringBuilder();
+        char[] chars = S.toCharArray();
         int cnt = 0;
-        for (char ch: S.toCharArray()) {
-            if (ch == '(' && cnt++ > 0)
-                ans.append(ch);
-            else if (ch == ')' && cnt-- > 1)
-                ans.append(ch);
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == 40 && cnt++ > 0)
+                ans.append(chars[i]);
+            else if (chars[i] == 41 && cnt-- > 1)
+                ans.append(chars[i]);
         }
         return ans.toString();
     }
