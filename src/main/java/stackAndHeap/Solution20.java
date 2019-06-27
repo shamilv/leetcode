@@ -1,15 +1,19 @@
 package stackAndHeap;
 
-import java.util.LinkedList;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 /**
  * me
+ *
+ * T.C.: O(n)
+ * S.C.: O(n)
  */
 public class Solution20 {
     public boolean isValid(String s) {
         if (s == null || s.isEmpty())
             return true;
-        LinkedList<Character> stack = new LinkedList<>();
+        Deque<Character> stack = new ArrayDeque<>();
         char[] chars = s.toCharArray();
         for (char ch: chars) {
             if (ch == '(' || ch == '{' || ch == '[')
