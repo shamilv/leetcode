@@ -1,12 +1,9 @@
 package trees;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 /**
- * me
+ * not me
  * medium
  *
  * T.C.: O(n)
@@ -15,17 +12,39 @@ import java.util.List;
 
 public class Solution103 {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        if (root == null) {
+            return Collections.emptyList();
         }
+        List<List<Integer>> levels = new ArrayList<>();
+        evenLevel(root, 0, levels);
+        oddLevel(root, 0, levels);
+        return levels;
     }
 
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    private void evenLevel(TreeNode root, int level, List<List<Integer>> levels) {
+        if (root == null)
+            return;
+        if (level == levels.size())
+            levels.add(new ArrayList<>());
+        if (level % 2 == 0)
+            levels.get(level).add(root.val);
+        evenLevel(root.left, level + 1, levels);
+        evenLevel(root.right, level + 1, levels);
+    }
+
+    private void oddLevel(TreeNode root, int level, List<List<Integer>> levels) {
+        if (root == null)
+            return;
+        if (level == levels.size())
+            levels.add(new ArrayList<>());
+        if (level % 2 != 0)
+            levels.get(level).add(root.val);
+        oddLevel(root.right, level + 1, levels);
+        oddLevel(root.left, level + 1, levels);
+    }
+
+    public List<List<Integer>> zigzagLevelOrder2(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null)
             return res;
