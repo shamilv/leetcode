@@ -47,4 +47,10 @@ public class Solution654 {
         }
         return res;
     }
+
+    public static void main(String[] arg) {
+        System.out.println((3/4) + 1);
+        System.out.println((6/4) + 1);
+        System.out.println((11/4) + 1);
+    }
 }
