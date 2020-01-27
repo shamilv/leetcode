@@ -1,6 +1,7 @@
 package arrays;
 
 public class Solution974 {
+
     public int subarraysDivByK(int[] A, int K) {
         int[] P = new int[K];
         P[0] = 1;
