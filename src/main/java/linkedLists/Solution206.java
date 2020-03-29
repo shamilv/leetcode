@@ -12,12 +12,3 @@ public class Solution206 {
         return newHead;
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}

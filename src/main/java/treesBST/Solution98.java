@@ -10,6 +10,8 @@ package treesBST;
 
 public class Solution98 {
 
+    //T.C.: O(N)
+    //S.C.: O(1)
     public boolean isValidBST(TreeNode root) {
         return helper(root, null, null);
     }

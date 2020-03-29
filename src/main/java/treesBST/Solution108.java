@@ -10,11 +10,12 @@ package treesBST;
 
 public class Solution108 {
 
+    //T.C.: O(N)
+    //S.C.: O(1)
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums == null || nums.length == 0)
             return null;
-        int l = 0, r = nums.length - 1;
-        return buildTree(nums, l, r);
+        return buildTree(nums, 0, nums.length - 1);
     }
 
     private TreeNode buildTree(int[] nums, int low, int high) {

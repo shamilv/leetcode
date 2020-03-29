@@ -12,7 +12,7 @@ class Solution102Test {
 
     @Test
     public void test1() {
-        Solution102.TreeNode treeNode = new Solution102.TreeNode(3);
+        TreeNode treeNode = new TreeNode(3);
 
         Solution102 solution102 = new Solution102();
         List<List<Integer>> res = solution102.levelOrder(treeNode);
@@ -24,12 +24,12 @@ class Solution102Test {
 
     @Test
     public void test2() {
-        Solution102.TreeNode treeNode = new Solution102.TreeNode(3);
-        treeNode.left = new Solution102.TreeNode(10);
-        treeNode.right = new Solution102.TreeNode(20);
+        TreeNode treeNode = new TreeNode(3);
+        treeNode.left = new TreeNode(10);
+        treeNode.right = new TreeNode(20);
 
-        treeNode.right.left = new Solution102.TreeNode(21);
-        treeNode.right.right = new Solution102.TreeNode(22);
+        treeNode.right.left = new TreeNode(21);
+        treeNode.right.right = new TreeNode(22);
 
         Solution102 solution102 = new Solution102();
         List<List<Integer>> res = solution102.levelOrder(treeNode);
@@ -43,15 +43,15 @@ class Solution102Test {
 
     @Test
     public void test3() {
-        Solution102.TreeNode treeNode = new Solution102.TreeNode(3);
-        treeNode.left = new Solution102.TreeNode(10);
-        treeNode.left.right = new Solution102.TreeNode(5);
+        TreeNode treeNode = new TreeNode(3);
+        treeNode.left = new TreeNode(10);
+        treeNode.left.right = new TreeNode(5);
 
 
-        treeNode.right = new Solution102.TreeNode(20);
+        treeNode.right = new TreeNode(20);
 
-        treeNode.right.left = new Solution102.TreeNode(21);
-        treeNode.right.right = new Solution102.TreeNode(22);
+        treeNode.right.left = new TreeNode(21);
+        treeNode.right.right = new TreeNode(22);
 
         Solution102 solution102 = new Solution102();
         List<List<Integer>> res = solution102.levelOrder(treeNode);

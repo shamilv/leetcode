@@ -3,23 +3,14 @@ package linkedLists;
 /** me */
 public class Solution141 {
 
-      public static class ListNode {
-          int val;
-          ListNode next;
-          ListNode(int x) {
-              val = x;
-              next = null;
-          }
-      }
-
+    //T.C.: O(N)
+    //S.C.: O(1)
     public boolean hasCycle(ListNode head) {
-        if (head == null)
-            return false;
-        ListNode iter = head, fastIter = head;
-        while (fastIter != null && fastIter.next != null) {
-            fastIter = fastIter.next.next;
-            iter = iter.next;
-            if (iter == fastIter)
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if (slow == fast)
                 return true;
         }
         return false;

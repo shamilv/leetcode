@@ -7,16 +7,6 @@ import java.util.Queue;
 
 public class Solution102 {
 
-    public static class TreeNode {
-        int val;
-        Solution102.TreeNode left;
-        Solution102.TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
-
     /**
      * not me
      * medium
@@ -25,6 +15,8 @@ public class Solution102 {
      * S.C.: O(n)
      */
 
+    //T.C.: O(N)
+    //S.C.: O(1)
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> levels = new ArrayList<>();
         if (root == null)
