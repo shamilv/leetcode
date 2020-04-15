@@ -65,6 +65,14 @@ public class Trie {
         return node.isEnd;
     }
 
-
-
+    public boolean startWith(String prefix) {
+        TrieNode node = root;
+        for (int i = 0; i < prefix.length(); i++) {
+            Character c = prefix.charAt(i);
+            TrieNode nextNode = node.nodes.get(c);
+            if (nextNode == null) return false;
+            node = nextNode;
+        }
+        return true;
+    }
 }

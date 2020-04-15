@@ -54,4 +54,14 @@ class TrieTest {
         assertTrue(trie.find("aab"));
     }
 
+    @Test
+    public void test4() {
+        Trie trie = new Trie();
+        trie.insert("aabb");
+        trie.insert("aabc");
+        trie.insert("aab");
+        assertTrue(trie.startWith("aa"));
+        assertFalse(trie.startWith("aac"));
+    }
+
 }

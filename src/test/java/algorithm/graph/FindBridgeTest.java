@@ -8,7 +8,7 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BridgeTest {
+class FindBridgeTest {
 
     @Test
     public void test1() {
@@ -22,8 +22,8 @@ class BridgeTest {
         g[6] = new LinkedList<>(Arrays.asList(3));
         g[7] = new LinkedList<>(Arrays.asList(8));
         g[8] = new LinkedList<>();
-        Bridge bridge = new Bridge();
-        Map<Integer, LinkedList<Integer>> b = bridge.findBridge(g);
+        FindBridge findBridge = new FindBridge();
+        Map<Integer, LinkedList<Integer>> b = findBridge.findBridge(g);
         assertEquals(b.get(2), Arrays.asList(3, 7));
         assertEquals(b.get(7), Arrays.asList(8));
     }

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Stack;
 
-public class Bridge {
+public class FindBridge {
 
     private Map<Integer, LinkedList<Integer>> b = new HashMap<>();
     private int[] ids;

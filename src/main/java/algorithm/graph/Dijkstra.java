@@ -1,37 +1,27 @@
 package algorithm.graph;
 
-import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class Dijkstra {
 
-    public int[] dijkstra(int[][] G, int n, int s) {
-        int[] ans = new int[n];
-        Arrays.fill(ans, -1);
-        ans[s] = 0;
-        boolean[] v = new boolean[n];
-        Integer i;
-        while ((i = getNext(ans, v)) != -1) {
-            for (int j = 0; j < G[i].length; j++) {
-                if (v[j]) continue;
-                if (G[i][j] != 0 && (ans[j] == -1 || ans[i] + G[i][j] < ans[j])) {
-                    ans[j] = ans[i] + G[i][j];
+    public Integer[] dijkstra(int[][] G, int s) {
+        boolean[] visited = new boolean[G.length];
+        Integer[] d = new Integer[G.length];
+        d[s] = 0;
+        PriorityQueue<int[]> q = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        q.add(new int[]{s, d[s]});
+
+        while (!q.isEmpty()) {
+            int u = q.poll()[0];
+            for (int v = 0; v < G[u].length; v++) {
+                if (G[u][v] == -1 || visited[v]) continue;
+                if (d[v] == null || (d[v] > d[u] + G[u][v])) {
+                    d[v] = d[u] + G[u][v];
+                    q.add(new int[]{v, d[v]});
                 }
             }
-            v[i] = true;
+            visited[u] = true;
         }
-        return ans;
+        return d;
     }
-
-    private Integer getNext(int[] ans, boolean[] v) {
-        Integer min = -1, index = -1;
-        for (int i = 0; i < ans.length; i++) {
-            if (v[i]) continue;
-            if (ans[i] != -1 && (min == -1 || min >= ans[i])) {
-                min = ans[i];
-                index = i;
-            }
-        }
-        return index;
-    }
-
 }
