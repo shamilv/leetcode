@@ -1,55 +1,43 @@
 package algorithm.graph;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class FindBridge {
-
-    private Map<Integer, LinkedList<Integer>> b = new HashMap<>();
+    private int id;
     private int[] ids;
-    private boolean[] vis;
-    private boolean[] onStack;
-    private Stack<Integer> s = new Stack<>();
+    private int[] lowLinks;
+    private int UNVISITED = -1;
 
-    public Map<Integer, LinkedList<Integer>> findBridge(LinkedList<Integer>[] g) {
-        int n = g.length;
+    public List<List<Integer>> findBridge(List<List<Integer>> g) {
+        int n = g.size();
         ids = new int[n];
-        vis = new boolean[n];
-        onStack = new boolean[n];
+        Arrays.fill(ids, UNVISITED);
+        lowLinks = new int[n];
+        List<List<Integer>> bridges = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            if (vis[i]) continue;
-            dfs(g, i);
+            if (ids[i] == UNVISITED) {
+                dfs(g, i, -1, bridges);
+            }
         }
-        return b;
+        return bridges;
     }
 
-    private void dfs(LinkedList<Integer>[] g, int i) {
-        vis[i] = true;
-        onStack[i] = true;
-        s.push(i);
-        ids[i] = i;
-        for (int j: g[i]) {
-            if (!vis[j]) {
-                dfs(g, j);
-            }
-            if (onStack[j]) {
-                ids[i] = Math.min(ids[i], ids[j]);
-            }
-            if (ids[i] < ids[j]) {
-                b.computeIfAbsent(i, (key)-> new LinkedList<>());
-                b.get(i).add(j);
-            }
-        }
-
-        if (i == ids[i]) {
-            int k = i-1;
-            while (k != i) {
-                k = s.pop();
-                onStack[k] = false;
+    private void dfs(List<List<Integer>> g, int current, int parent, List<List<Integer>> bridges) {
+        ids[current] = lowLinks[current] = id++;
+        for (int next: g.get(current)) {
+            if (next == parent) continue;
+            if (ids[next] == UNVISITED) {
+                dfs(g, next, current, bridges);
+                lowLinks[current] = Math.min(lowLinks[current], lowLinks[next]);
+                if (lowLinks[current] < lowLinks[next]) {
+                    List<Integer> pair = new LinkedList<>();
+                    pair.add(current);
+                    pair.add(next);
+                    bridges.add(pair);
+                }
+            } else {
+                lowLinks[current] = Math.min(lowLinks[current], ids[next]);
             }
         }
     }
-
 }
