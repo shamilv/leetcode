@@ -11,8 +11,9 @@ public class Solution560 {
         int prefix = 0, cnt = 0;
         for (int a: nums) {
             prefix += a;
-            cnt += dict.getOrDefault(prefix - k, 0);
-            dict.put(prefix, dict.getOrDefault(prefix, 0) + 1);
+            if (dict.containsKey(prefix - k))
+                cnt += dict.get(prefix - k);
+            dict.merge(prefix, 1, Integer::sum);
         }
         return cnt;
     }
