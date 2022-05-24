@@ -11,6 +11,16 @@ class Solution42Test {
         Solution42 solution42 = new Solution42();
         int ans = solution42.trap(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
         assertEquals(6, ans);
+
+        ans = solution42.trapTwoPointers(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
+        assertEquals(6, ans);
+    }
+
+    @Test
+    public void testBrute1() {
+        Solution42 solution42 = new Solution42();
+        int ans = solution42.trapBrute(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1});
+        assertEquals(6, ans);
     }
 
 }
