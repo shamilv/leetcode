@@ -8,13 +8,13 @@
 7. Design In-Memory File System
 8. Meeting Rooms II (Solved)
 9. Integer to English Words
-10. Word Search
+10. Word Search (Solved)
 11. Word Search II
 12. Merge k Sorted Lists
 13. Median of Two Sorted Arrays
 14. K Closest Points to Origin (Mmmm?)
 15. Longest Palindromic Substring
-16. Group Anagrams
+16. Group Anagrams (Solved)
 17. Pairs of Songs With Total Durations Divis
 18. Search Suggestions System
 19. Word Ladder

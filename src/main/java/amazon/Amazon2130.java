@@ -29,7 +29,7 @@ public class Amazon2130 {
 
     // 1 2 3 4
     // 1 2 3 4 5 6
-    private ListNode findTwin(ListNode s, ListNode f) {
+    /*private ListNode findTwin(ListNode s, ListNode f) {
         if (f.next == null) {
             return s.next;
         }
@@ -38,5 +38,5 @@ public class Amazon2130 {
         ListNode p = findTwin(s, f);
         ans = Math.max(ans, s.val + p.val);
         return p.next;
-    }
+    }*/
 }
