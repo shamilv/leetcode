@@ -8,9 +8,9 @@
 7. Design In-Memory File System
 8. Meeting Rooms II #Solved
 9. Integer to English Words
-10. Word Search #Solved
-11. Word Search II
-12. Merge k Sorted Lists
+10. 79 Word Search #Solved
+11. 212 Word Search II #Solved #me
+12. Merge k Sorted Lists #Solved #me
 13. Median of Two Sorted Arrays
 14. K Closest Points to Origin (Mmmm?)
 15. Longest Palindromic Substring
@@ -30,22 +30,22 @@
 29. Find Median from Data Stream
 30. Flip String to Monotone Increasing #Solved
 31. Design Tic-Tac-Toe
-32. Concatenated Words
+32. Concatenated Words #Solved
 33. Binary Tree Zigzag Level Order Traversal
 34. Rotting Oranges
 35. Reorganize String
 36. Find Winner on a Tic Tac Toe Game
 37. Snakes and Ladders
 38. Boundary of Binary Tree
-39. Maximum Units on a Truck
-40. Range Addition
+39. 1710 Maximum Units on a Truck #Solved #me
+40. 370 Range Addition #Solved #notme
 41. Maximum Length of Subarray With Posit #Solved
 42. Longest Continuous Subarray With Abso
-43. Sum of Subarray Minimums #Solved
+43. 907 Sum of Subarray Minimums #Solved #notme
 44. The kth Factor of n
 45. Maximum Twin Sum of a Linked List
 46. Shortest Path to Get Food
-47. Minimum Swaps to Group All 1's Together #Solved
+47. 1151. Minimum Swaps to Group All 1's Together #Solved #notme
 48. Minimum Cost to Connect Sticks
 49. Design an Expression Tree With Evaluate Function
 50. Kill Process
