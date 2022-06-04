@@ -24,7 +24,7 @@
 23. 1152 Analyze User Website Visit Pattern #Solved #notme
 24. 2104 Sum of Subarray Ranges #Solved #notme
 25. 210 Course Schedule II #Solved #notme
-26. Word Break
+26. 139 Word Break #Solved #me
 27. Count Binary Substrings
 28. All Nodes Distance K in Binary Tree
 29. Find Median from Data Stream
@@ -34,7 +34,7 @@
 33. Binary Tree Zigzag Level Order Traversal
 34. Rotting Oranges
 35. Reorganize String #Solved #notme
-36. Find Winner on a Tic Tac Toe Game
+36. 1275 Find Winner on a Tic Tac Toe Game #Solved #me
 37. Snakes and Ladders
 38. 545 Boundary of Binary Tree #Solved #me
 39. 1710 Maximum Units on a Truck #Solved #me
@@ -42,11 +42,11 @@
 41. Maximum Length of Subarray With Posit #Solved
 42. 1438 Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit #Solved #notme
 43. 907 Sum of Subarray Minimums #Solved #notme
-44. The kth Factor of n
+44. 1492 The kth Factor of n #Solved #notme
 45. 2130 Maximum Twin Sum of a Linked List #Solved #notme
 46. 1730 Shortest Path to Get Food #Solved #notme
 47. 1151. Minimum Swaps to Group All 1's Together #Solved #notme
-48. Minimum Cost to Connect Sticks
+48. 1167 Minimum Cost to Connect Sticks #Solved #notme
 49. 1628 Design an Expression Tree With Evaluate Function #Solved #me
 50. Kill Process
 51. Sequentially Ordinal Rank Tracker
