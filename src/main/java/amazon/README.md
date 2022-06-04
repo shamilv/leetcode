@@ -5,37 +5,37 @@
 4. 200 Number of Islands #Solved #me
 5. 42 Trapping Rain Water #Solved #me
 6. Best Time to Buy and Sell Stock #Solved #me
-7. Design In-Memory File System
+7. Design In-Memory File System #Waiting
 8. Meeting Rooms II #Solved #me
-9. Integer to English Words
+9. Integer to English Words #Waiting
 10. 79 Word Search #Solved #me
 11. 212 Word Search II #Solved #me
 12. Merge k Sorted Lists #Solved #me
-13. Median of Two Sorted Arrays
-14. K Closest Points to Origin (Mmmm?)
-15. Longest Palindromic Substring
+13. Median of Two Sorted Arrays #Waiting
+14. K Closest Points to Origin #Waiting
+15. Longest Palindromic Substring #Waiting
 16. 49 Group Anagrams #Solved #me
-17. Pairs of Songs With Total Durations Divis
+17. Pairs of Songs With Total Durations Divis #Waiting
 18. Search Suggestions System #Solved #notme
-19. Word Ladder
+19. Word Ladder #Waiting
 20. 828 Count Unique Characters of All Substrings of a Given String #Solved #notme
 21. Reorder Data in Log Files #Solved #me
-22. Sliding Window Maximum
+22. Sliding Window Maximum #Waiting
 23. 1152 Analyze User Website Visit Pattern #Solved #notme
 24. 2104 Sum of Subarray Ranges #Solved #notme
 25. 210 Course Schedule II #Solved #notme
 26. 139 Word Break #Solved #me
-27. Count Binary Substrings
-28. All Nodes Distance K in Binary Tree
-29. Find Median from Data Stream
+27. Count Binary Substrings #Waiting
+28. All Nodes Distance K in Binary Tree #Waiting
+29. Find Median from Data Stream #Waiting
 30. Flip String to Monotone Increasing #Solved
 31. 348 Design Tic-Tac-Toe #Solved #me
 32. Concatenated Words #Solved
-33. Binary Tree Zigzag Level Order Traversal
-34. Rotting Oranges
+33. Binary Tree Zigzag Level Order Traversal #Waiting
+34. Rotting Oranges #Waiting
 35. Reorganize String #Solved #notme
 36. 1275 Find Winner on a Tic Tac Toe Game #Solved #me
-37. Snakes and Ladders
+37. Snakes and Ladders #Waiting
 38. 545 Boundary of Binary Tree #Solved #me
 39. 1710 Maximum Units on a Truck #Solved #me
 40. 370 Range Addition #Solved #notme
@@ -48,10 +48,10 @@
 47. 1151. Minimum Swaps to Group All 1's Together #Solved #notme
 48. 1167 Minimum Cost to Connect Sticks #Solved #notme
 49. 1628 Design an Expression Tree With Evaluate Function #Solved #me
-50. Kill Process
-51. Sequentially Ordinal Rank Tracker
+50. Kill Process #Waiting
+51. Sequentially Ordinal Rank Tracker #Waiting
 52. Minimum Health to Beat Game #Solved #me
-53. Permutations
+53. Permutations #Waiting
 54. Rotate Image #Solved
 55. Add Two Numbers #Solved
 56. Longest Substring Without Repeating Characters #Solved
