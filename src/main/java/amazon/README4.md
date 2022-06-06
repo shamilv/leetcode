@@ -6,9 +6,9 @@
 4. 926 Flip String to Monotone Increasing #Solved 
 5. 2104 Sum of Subarray Ranges #Solved #notme
 6. 200 Number of Islands #Solved #me
-7. 1167  Minimum Cost to Connect Sticks #Solved #notme
+7. 1167 Minimum Cost to Connect Sticks #Solved #notme
 8. 1648 Sell Diminishing-Valued Colored Balls #Waiting
-9. 1041 Robot Bounded In Circle #Waiting
+9. 1041 Robot Bounded In Circle #Solved #me
 10. 1492 The kth Factor of n #Solved #notme
 11. 253 Meeting Rooms II #Solved #me
 12. 370 Range Addition #Solved #notme
@@ -23,10 +23,10 @@
 21. 1730 Shortest Path to Get Food #Solved #notme
 22. 1567 Maximum Length of Subarray With Positive Product #Solved #notme
 23. 348 Design Tic-Tac-Toe #Solved #me
-24. 1010 Pairs of Songs With Total Durations Divisible by 60 #Waiting
+24. 1010 Pairs of Songs With Total Durations Divisible by 60 #Solved #notme
 25. 210 Course Schedule II #Solved #notme
 26. 1120  Maximum Average Subtree #Waiting
-27. 994 Rotting Oranges #Waiting
+27. 994 Rotting Oranges #Solved #me
 28. 863 All Nodes Distance K in Binary Tree #Waiting
 29. 642 Design Search Autocomplete System #Waiting
 30. 1353 Maximum Number of Events That Can Be Attended #Waiting
@@ -87,7 +87,7 @@
 85. 692 Top K Frequent Words #Waiting
 86. 540 Single Element in a Sorted Array #Waiting
 87. 11 Container With Most Water #Waiting
-88. 402 Remove K Digits #Waiting
+88. 402 Remove K Digits #Solved #notme
 89. 55 Jump Game #Waiting
 90. 528 Random Pick with Weight #Waiting
 91. 445 Add Two Numbers II #Waiting
