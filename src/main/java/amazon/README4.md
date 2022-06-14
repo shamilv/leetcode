@@ -42,7 +42,7 @@
 40. 767 Reorganize String #Solved #notme
 41. 1429 First Unique Number #Waiting
 42. 103 Binary Tree Zigzag Level Order Traversal #Waiting
-43. 17 Letter Combinations of a Phone Number #Waiting
+43. 17 Letter Combinations of a Phone Number #Solved #me
 44. 12 Integer to Roman #Waiting
 45. 694 Number of Distinct Islands #Waiting
 46. 909 Snakes and Ladders #Waiting
@@ -56,7 +56,7 @@
 54. 236 Lowest Common Ancestor of a Binary Tree #Waiting
 55. 347 Top K Frequent Elements #Waiting
 56. 238 Product of Array Except Self #Waiting
-57. 582 Kill Process #Waiting
+57. 582 Kill Process #Solved #me
 58. 3 Longest Substring Without Repeating Characters #Solved
 59. 695 Max Area of Island #Waiting
 60. 2021 Brightest Position on Street #Waiting
