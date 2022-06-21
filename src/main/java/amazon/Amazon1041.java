@@ -25,7 +25,6 @@ public class Amazon1041 {
     }
 
     public boolean isRobotBounded_BruteForce(String instructions) {
-        Deque<Integer> deq = new LinkedList<>();
         int[][] dirs = new int[][]{{1, 0}, {0, -1}, {-1, 0}, {0, 1}};
         int i = 0;
         int[] pos = new int[]{0, 0};

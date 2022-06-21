@@ -1,7 +1,5 @@
 package amazon;
 
-import java.util.Arrays;
-
 public class Amazon828 {
     public int uniqueLetterString(String s) {
         int[] contrib = new int[26];

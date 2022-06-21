@@ -1,8 +1,5 @@
 package amazon;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class Amazon2104 {
     public long subArrayRanges(int[] nums) {
         int ans = 0;

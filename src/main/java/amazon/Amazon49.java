@@ -19,7 +19,7 @@ public class Amazon49 {
             String key = new String(A);
 
             if (!dict.containsKey(key)) {
-                dict.put(key, new LinkedList());
+                dict.put(key, new LinkedList<>());
             }
             List<String> group = dict.get(key);
             group.add(a);

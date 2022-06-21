@@ -1,7 +1,5 @@
 package amazon;
 
-import java.util.List;
-
 public class Amazon767 {
 
     public String reorganizeString(String s) {

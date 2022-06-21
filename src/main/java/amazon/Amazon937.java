@@ -36,14 +36,4 @@ public class Amazon937 {
             return indexA.compareTo(indexB);
         }
     }
-
-    private boolean isNumber(String a) {
-        for (char ch: a.toCharArray()) {
-            if (!Character.isDigit(ch)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
 }

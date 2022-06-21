@@ -1,8 +1,5 @@
 package amazon;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class Amazon1275 {
 
     public String tictactoe(int[][] moves) {

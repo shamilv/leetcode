@@ -1,7 +1,6 @@
 package amazon;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 public class Amazon253 {
     //[1, 2], [3, 4]
