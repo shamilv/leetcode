@@ -24,6 +24,7 @@
 22. 1567 Maximum Length of Subarray With Positive Product #Solved #notme
 23. 348 Design Tic-Tac-Toe #Solved #me
 24. 1010 Pairs of Songs With Total Durations Divisible by 60 #Solved #notme
+25. 2268 Minimum Number of Keypresses #Solved #notme
 25. 210 Course Schedule II #Solved #notme
 26. 1120  Maximum Average Subtree #Solved #notme
 27. 994 Rotting Oranges #Solved #me
@@ -43,7 +44,7 @@
 41. 1429 First Unique Number #Waiting
 42. 103 Binary Tree Zigzag Level Order Traversal #Waiting
 43. 17 Letter Combinations of a Phone Number #Solved #me
-44. 12 Integer to Roman #Waiting
+44. 12 Integer to Roman #Solved #me
 45. 694 Number of Distinct Islands #Waiting
 46. 909 Snakes and Ladders #Waiting
 47. 207 Course Schedule #Waiting
@@ -67,7 +68,7 @@
 65. 5 Longest Palindromic Substring #Waiting
 66. 754 Reach a Number #Waiting
 67. 1465 Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts #Waiting
-68. 134 Gas Station #Waiting
+68. 134 Gas Station #Solved #notme
 69. 560 Subarray Sum Equals K #Waiting
 70. 15 3Sum #Waiting
 71. 503 Next Greater Element II #Waiting
