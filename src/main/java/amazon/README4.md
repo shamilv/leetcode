@@ -6,12 +6,12 @@
 4. 926 Flip String to Monotone Increasing #Solved 
 5. 2104 Sum of Subarray Ranges #Solved #notme
 6. 200 Number of Islands #Solved #me
-7. 1167 Minimum Cost to Connect Sticks #Solved #notme
+7. 1167 Minimum Cost to Connect Sticks #Solved #me
 8. 1648 Sell Diminishing-Valued Colored Balls #Waiting
 9. 1041 Robot Bounded In Circle #Solved #me
 10. 1492 The kth Factor of n #Solved #notme
 11. 253 Meeting Rooms II #Solved #me
-12. 370 Range Addition #Solved #notme
+12. 370 Range Addition #Solved #notme #1
 13. 973 K Closest Points to Origin #Waiting
 14. 56 Merge Intervals #Solved #me
 15. 1135 Connecting Cities With Minimum Cost #Waiting
@@ -21,7 +21,7 @@
 19. 1628 Design an Expression Tree With Evaluate Function #Solved #me
 20. 907 Sum of Subarray Minimums #Solved #notme
 21. 1730 Shortest Path to Get Food #Solved #notme
-22. 1567 Maximum Length of Subarray With Positive Product #Solved #notme
+22. 1567 Maximum Length of Subarray With Positive Product #Solved #notme #1
 23. 348 Design Tic-Tac-Toe #Solved #me
 24. 1010 Pairs of Songs With Total Durations Divisible by 60 #Solved #notme
 25. 2268 Minimum Number of Keypresses #Solved #notme

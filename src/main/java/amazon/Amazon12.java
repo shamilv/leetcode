@@ -8,12 +8,6 @@ import java.util.Set;
 
 public class Amazon12 {
     public String intToRoman(int num) {
-        Map<Character, Integer> map = new HashMap<>();
-        Set<Map.Entry<Character, Integer>> entries = map.entrySet();
-        for (Map.Entry<Character, Integer> e: entries) {
-            e.getKey()
-        }
-        Collections.sort(new ArrayList<>(entries), (a, b) -> b.getKey() - a.getKey());
         StringBuilder builder = new StringBuilder();
         while (num > 0) {
             if (num >= 1000) {
