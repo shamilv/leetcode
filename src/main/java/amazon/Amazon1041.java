@@ -1,8 +1,5 @@
 package amazon;
 
-import java.util.Deque;
-import java.util.LinkedList;
-
 public class Amazon1041 {
     public boolean isRobotBounded(String instructions) {
         int i = 0;
