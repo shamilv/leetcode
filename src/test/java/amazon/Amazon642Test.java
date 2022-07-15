@@ -1,4 +1,4 @@
-package amazon;
+package companies.amazon;
 
 import org.junit.jupiter.api.Test;
 
