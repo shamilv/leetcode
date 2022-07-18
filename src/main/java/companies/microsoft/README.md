@@ -12,3 +12,6 @@
 1. 206 Reverse Linked List #Solved #me
 2. 141 Linked List Cycle #Solved #me
 3. 2 Add Two Numbers #Solved #me #pain
+4. 445 Add Two Numbers II
+5. 21 Merge Two Sorted Lists
+6. 160 Intersection of Two Linked Lists
